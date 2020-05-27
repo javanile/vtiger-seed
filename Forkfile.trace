@@ -1,1 +1,3 @@
 START /home/francesco/Develop/Javanile/vtiger-seed
+COPY Makefile
+COPY .editorconfig
