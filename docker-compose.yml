@@ -5,9 +5,14 @@ services:
   vtiger:
     image: javanile/vtiger:7.1.0
     environment:
+      - VT_DEBUG=true
       - MYSQL_ROOT_PASSWORD=secret
+    ports:
+      - "8080:80"
     volumes:
       - .:/app
+      - ./vendor/javanile/vtiger-core/data:/var/www/html/data
+      - ./vendor/javanile/vtiger-core/modules/Users/models:/var/www/html/modules/Users/models
 
   mysql:
     image: mysql:5.5
@@ -16,6 +21,14 @@ services:
       - MYSQL_ROOT_PASSWORD=secret
     volumes:
       - mysql:/var/lib/mysql:rw
+
+  adminer:
+    image: javanile/adminer
+    environment:
+      - MYSQL_DATABASE=vtiger
+      - MYSQL_ROOT_PASSWORD=secret
+    ports:
+      - "8081:8080"
 
 volumes:
   mysql:

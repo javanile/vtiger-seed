@@ -1,0 +1,37 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "66aa2e191e5207f2191829a0a34e0a09",
+    "packages": [],
+    "packages-dev": [
+        {
+            "name": "javanile/vtiger-core",
+            "version": "7.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/javanile/vtiger-core.git",
+                "reference": "9555c407ab7935d4b80c8a3157736829999379d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/javanile/vtiger-core/zipball/9555c407ab7935d4b80c8a3157736829999379d1",
+                "reference": "9555c407ab7935d4b80c8a3157736829999379d1",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2020-05-04T12:30:32+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}
